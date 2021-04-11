@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2016 The TensorFlow Authors. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background"
+    tools:context="org.tensorflow.demo.CameraActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="39dp"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="168dp"
+            android:layout_marginLeft="207dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginBottom="180dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/blue"
+            android:gravity="bottom|center"
+            android:lineSpacingExtra="8sp"
+
+
+            android:maxWidth="10dp"
+            android:maxHeight="10dp"
+            android:scaleType="fitCenter"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <!--        <Button-->
+<!--            android:id="@+id/button_3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="217dp"-->
+<!--            android:layout_marginEnd="217dp"-->
+<!--            android:layout_marginBottom="11dp"-->
+<!--            android:text="사용자-현재인물" />-->
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="217dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="217dp"
+            android:layout_marginEnd="217dp"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/arrow" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="217dp"
+            android:layout_marginEnd="217dp"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/set" />
+
+        <Button
+            android:id="@+id/gall"
+            android:layout_width="72dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="78dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/gallery"
+            android:maxWidth="20dp"
+            android:maxHeight="20dp"
+            android:scaleType="fitCenter"
+            android:gravity="center|bottom"
+            android:text="gallery"
+            android:textSize="10dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/button_main_capture"
+            android:layout_width="125dp"
+            android:layout_height="119dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="45dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/click"
+            android:maxWidth="30dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textspeech"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="Hello World!"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

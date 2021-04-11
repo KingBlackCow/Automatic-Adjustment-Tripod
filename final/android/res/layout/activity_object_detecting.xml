@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"><![CDATA[
+    tools:context=".ObjectDetectingActivity">
+
+
+
+
+
+
+    app:layout_toBottomOf="@+id/btnConnect" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <com.kongqw.ObjectDetectingView
+        android:id="@+id/photograph_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="swapCamera"
+        android:text="Swich_Camera" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="67dp"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/button_main_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="캡처" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="face" />
+
+        <RadioButton
+            android:id="@+id/rb_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eye" />
+
+        <RadioButton
+            android:id="@+id/rb_upper_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uppper_body" />
+
+        <RadioButton
+            android:id="@+id/rb_lower_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lower_body" />
+
+        <RadioButton
+            android:id="@+id/rb_full_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="full_body" />
+
+        <RadioButton
+            android:id="@+id/rb_smile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="smile" />
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
